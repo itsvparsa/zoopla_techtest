@@ -6,7 +6,7 @@ And(/^I go to rent page$/) do
   click_on("search-tabs-to-rent")
 end
 
-And(/^I set area as "([^"]*)"$/) do |location|
+And(/^I enter "([^"]*)" and select suggested first search result$/) do |location|
   find("#search-input-location").set(location)
   find(:xpath, "/html/body/ul/li[1]/a").click
 end
